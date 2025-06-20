@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "RUNNING_ENV=local node ./build/main.js",
+    "build": "babel src --out-dir build --source-maps inline --copy-files",
+    "local": "yarn build && yarn start"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.0.0",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "eslint": "^8.0.0"
+  }
+}
